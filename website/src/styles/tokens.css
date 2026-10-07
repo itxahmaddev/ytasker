@@ -1,0 +1,114 @@
+/* Design tokens. Teal + orange "productivity tool" palette, Plus Jakarta Sans.
+   Text colours are chosen to meet WCAG AA (4.5:1) on their surfaces. */
+:root {
+  --font: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  --radius-sm: 8px;
+  --radius: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 26px;
+
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --dur-fast: 120ms;
+  --dur: 200ms;
+  --dur-slow: 420ms;
+
+  --sidebar-w: 256px;
+  --topbar-h: 64px;
+
+  color-scheme: light;
+  --bg: #f3f7f7;
+  --surface: #ffffff;
+  --surface-2: #eef3f4;
+  --surface-3: #e4ecee;
+  --border: #dde6e8;
+  --border-strong: #c3d0d3;
+  --text: #0d1d21;
+  --text-muted: #546469;
+  --text-faint: #7b8b90;
+
+  --primary: #0f766e; /* buttons, 5.5:1 with white text */
+  --primary-hover: #0b5f59;
+  --primary-bright: #14b8a6;
+  --primary-ink: #0f766e; /* primary used as text on surfaces */
+  --primary-soft: #dcf3ef;
+  --on-primary: #ffffff;
+
+  --accent: #ea580c;
+  --accent-ink: #b84a0a;
+  --accent-soft: #ffedd5;
+
+  --danger: #c62828;
+  --danger-soft: #fde8e8;
+  --success: #15803d;
+  --success-soft: #dcfce7;
+  --info: #1d4ed8;
+  --info-soft: #dbeafe;
+  --warn: #a15c07;
+  --warn-soft: #fef3c7;
+
+  --st-pending: #64748b;
+  --st-progress: #2563eb;
+  --st-done: #16a34a;
+
+  --pr-high: #dc2626;
+  --pr-medium: #d97706;
+  --pr-low: #64748b;
+
+  --ring: 0 0 0 3px rgba(20, 184, 166, 0.45);
+  --shadow-sm: 0 1px 2px rgba(13, 29, 33, 0.06);
+  --shadow: 0 4px 14px rgba(13, 29, 33, 0.07), 0 1px 3px rgba(13, 29, 33, 0.06);
+  --shadow-lg: 0 24px 60px rgba(13, 29, 33, 0.16), 0 6px 16px rgba(13, 29, 33, 0.08);
+
+  --hero-glow: radial-gradient(60% 50% at 70% 0%, rgba(20, 184, 166, 0.22), transparent 70%),
+    radial-gradient(40% 40% at 10% 10%, rgba(234, 88, 12, 0.1), transparent 70%);
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #0a1215;
+  --surface: #111c20;
+  --surface-2: #172529;
+  --surface-3: #1e3035;
+  --border: #223439;
+  --border-strong: #324b51;
+  --text: #e8f2f3;
+  --text-muted: #9bb0b5;
+  --text-faint: #7a9096;
+
+  --primary: #14b8a6;
+  --primary-hover: #2dd4bf;
+  --primary-bright: #2dd4bf;
+  --primary-ink: #5eead4;
+  --primary-soft: rgba(45, 212, 191, 0.14);
+  --on-primary: #03201c;
+
+  --accent: #fb923c;
+  --accent-ink: #fdba74;
+  --accent-soft: rgba(251, 146, 60, 0.15);
+
+  --danger: #f87171;
+  --danger-soft: rgba(248, 113, 113, 0.14);
+  --success: #4ade80;
+  --success-soft: rgba(74, 222, 128, 0.14);
+  --info: #93c5fd;
+  --info-soft: rgba(96, 165, 250, 0.16);
+  --warn: #fbbf24;
+  --warn-soft: rgba(251, 191, 36, 0.14);
+
+  --st-pending: #94a3b8;
+  --st-progress: #60a5fa;
+  --st-done: #4ade80;
+
+  --pr-high: #f87171;
+  --pr-medium: #fbbf24;
+  --pr-low: #94a3b8;
+
+  --ring: 0 0 0 3px rgba(45, 212, 191, 0.5);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 24px 60px rgba(0, 0, 0, 0.55);
+
+  --hero-glow: radial-gradient(60% 50% at 70% 0%, rgba(45, 212, 191, 0.16), transparent 70%),
+    radial-gradient(40% 40% at 10% 10%, rgba(251, 146, 60, 0.09), transparent 70%);
+}
